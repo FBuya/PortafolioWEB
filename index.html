@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Franco Buyatti | Páginas web para negocios de barrio</title>
+  <meta name="description" content="Páginas web simples para comercios y profesionales: servicios, precios, horarios, mapa y WhatsApp. Diseño, textos y publicación incluidos. Buenos Aires.">
+
+  <meta property="og:title" content="Franco Buyatti | Páginas web para negocios de barrio">
+  <meta property="og:description" content="Tus clientes te encuentran, ven tus precios y te escriben por WhatsApp.">
+  <meta property="og:image" content="assets/barberia.jpg">
+  <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <a class="saltar" href="#contenido">Ir al contenido</a>
+
+  <header class="header" id="header">
+    <div class="contenedor header__fila">
+      <a href="#inicio" class="marca">Franco Buyatti</a>
+
+      <button class="menu-boton" id="menuBoton" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span>
+      </button>
+
+      <nav class="nav" id="nav" aria-label="Principal">
+        <a href="#ejemplos">Ejemplos</a>
+        <a href="#precios">Precios</a>
+        <a href="#proceso">Cómo trabajo</a>
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#" class="boton boton--wa boton--chico js-whatsapp" data-mensaje="Hola Franco! Vi tu página y quiero consultarte por una web.">Escribime</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+
+    <!-- ============ HERO: texto + demo en vivo ============ -->
+    <section class="hero" id="inicio">
+      <div class="hero__texto">
+        <h1>Páginas web para negocios de barrio.</h1>
+        <p class="hero__bajada">Las armo de punta a punta: diseño, textos y publicación. Tus clientes te encuentran en Google, ven tus precios y horarios, y te escriben por WhatsApp.</p>
+        <div class="hero__acciones">
+          <a href="#" class="boton boton--wa js-whatsapp" data-mensaje="Hola Franco! Quiero pedir presupuesto para una web para mi negocio.">
+            <svg class="icono" aria-hidden="true"><use href="#i-wa"></use></svg>
+            Pedir presupuesto
+          </a>
+          <a href="#precios" class="boton boton--linea">Ver precios</a>
+        </div>
+        <p class="hero__nota">Presupuesto sin cargo. Respondo en el día.</p>
+      </div>
+
+      <div class="hero__demo">
+        <p class="demo__ayuda" id="demoAyuda">Probala: es una web real, podés scrollear y tocar.</p>
+        <div class="telefono">
+          <div class="telefono__pantalla">
+            <iframe id="demoFrame" src="barberia/" title="Web de ejemplo: barbería" loading="eager"></iframe>
+          </div>
+        </div>
+        <div class="selector" role="group" aria-label="Elegir ejemplo">
+          <button type="button" class="selector__op" aria-pressed="true" data-src="barberia/" data-titulo="Web de ejemplo: barbería">Barbería</button>
+          <button type="button" class="selector__op" aria-pressed="false" data-src="veterinaria/" data-titulo="Web de ejemplo: veterinaria">Veterinaria</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EJEMPLOS ============ -->
+    <section class="bloque" id="ejemplos">
+      <div class="contenedor">
+        <h2>Ejemplos</h2>
+        <p class="bloque__intro">Son negocios inventados, armados para mostrar cómo puede quedar el tuyo. Cada web se diseña a medida del rubro: no hay dos iguales.</p>
+
+        <div class="ejemplo">
+          <a href="barberia/" class="ejemplo__img" aria-hidden="true" tabindex="-1">
+            <img src="assets/barberia.jpg" alt="" loading="lazy" width="800" height="480">
+          </a>
+          <div class="ejemplo__texto">
+            <h3>Barbería</h3>
+            <p>Oscura y elegante, como el local. Cada servicio tiene su botón de reserva: el cliente toca y le llega a la barbería un WhatsApp con el servicio ya escrito. El horario muestra si está abierto en este momento.</p>
+            <a href="barberia/" class="enlace">Abrir la web completa</a>
+          </div>
+        </div>
+
+        <div class="ejemplo ejemplo--invertido">
+          <a href="veterinaria/" class="ejemplo__img" aria-hidden="true" tabindex="-1">
+            <img src="assets/veterinaria.jpg" alt="" loading="lazy" width="800" height="480">
+          </a>
+          <div class="ejemplo__texto">
+            <h3>Veterinaria</h3>
+            <p>Clara y familiar. Un formulario de turnos que llega ordenado por WhatsApp con los datos de la mascota, y un botón de guardia que llama directo desde el celular.</p>
+            <a href="veterinaria/" class="enlace">Abrir la web completa</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PRECIOS ============ -->
+    <!-- Montos de referencia en USD. Para cambiarlos, editá esta tabla. -->
+    <section class="bloque bloque--niebla" id="precios">
+      <div class="contenedor">
+        <h2>Precios</h2>
+        <p class="bloque__intro">Valores de referencia en dólares; se pagan en pesos al cambio del día. El presupuesto final te lo paso cerrado antes de empezar.</p>
+
+        <div class="tabla-envoltura">
+          <table class="tabla-precios">
+            <caption class="sr-only">Comparación de planes</caption>
+            <thead>
+              <tr>
+                <th scope="col"><span class="sr-only">Qué incluye</span></th>
+                <th scope="col">
+                  <span class="plan__nombre">Web simple</span>
+                  <span class="plan__precio">US$100</span>
+                  <span class="plan__para">Para estar en Google y que te escriban</span>
+                </th>
+                <th scope="col" class="col-destacada">
+                  <span class="plan__nombre">Web completa</span>
+                  <span class="plan__precio">US$150</span>
+                  <span class="plan__para">Para negocios que trabajan con turnos</span>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><th scope="row">Servicios, precios y horarios</th><td><span class="si">Incluido</span></td><td class="col-destacada"><span class="si">Incluido</span></td></tr>
+              <tr><th scope="row">Botón de WhatsApp y mapa</th><td><span class="si">Incluido</span></td><td class="col-destacada"><span class="si">Incluido</span></td></tr>
+              <tr><th scope="row">Pensada primero para celular</th><td><span class="si">Incluido</span></td><td class="col-destacada"><span class="si">Incluido</span></td></tr>
+              <tr><th scope="row">Publicación y puesta en marcha</th><td><span class="si">Incluido</span></td><td class="col-destacada"><span class="si">Incluido</span></td></tr>
+              <tr><th scope="row">Formulario de turnos que llega por WhatsApp</th><td><span class="no">No incluido</span></td><td class="col-destacada"><span class="si">Incluido</span></td></tr>
+              <tr><th scope="row">Galería de trabajos</th><td><span class="no">No incluido</span></td><td class="col-destacada"><span class="si">Incluido</span></td></tr>
+              <tr><th scope="row">Cartel de abierto o cerrado en vivo</th><td><span class="no">No incluido</span></td><td class="col-destacada"><span class="si">Incluido</span></td></tr>
+              <tr><th scope="row">Preguntas frecuentes</th><td><span class="no">No incluido</span></td><td class="col-destacada"><span class="si">Incluido</span></td></tr>
+              <tr class="fila-plazo"><th scope="row">Entrega estimada</th><td>5 días</td><td class="col-destacada">7 días</td></tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td></td>
+                <td><a href="#" class="boton boton--linea boton--ancho js-whatsapp" data-mensaje="Hola Franco! Me interesa la Web simple.">Consultar</a></td>
+                <td class="col-destacada"><a href="#" class="boton boton--ancho js-whatsapp" data-mensaje="Hola Franco! Me interesa la Web completa.">Consultar</a></td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+
+        <div class="extras">
+          <div class="extra">
+            <h3>Mantenimiento <span class="extra__precio">US$15 por mes</span></h3>
+            <p>Cambio precios, horarios, fotos y textos cuando lo necesites. Respuesta en 48 horas hábiles.</p>
+          </div>
+          <div class="extra">
+            <h3>Soporte técnico remoto <span class="extra__precio">a consultar</span></h3>
+            <p>¿La compu anda lenta, no imprime o tiene un virus? Me conecto con tu permiso y ves todo en tu pantalla. Más de dos años de experiencia en mesa de ayuda.</p>
+            <a href="#" class="enlace js-whatsapp" data-mensaje="Hola Franco! Necesito soporte técnico para mi PC.">Pedir ayuda por WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROCESO ============ -->
+    <section class="bloque" id="proceso">
+      <div class="contenedor">
+        <h2>Cómo trabajo</h2>
+        <p class="bloque__intro">Una web simple, desde la primera charla hasta que está online, lleva alrededor de una semana.</p>
+
+        <ol class="linea-tiempo">
+          <li>
+            <span class="linea-tiempo__dia">Día 1</span>
+            <h3>Charlamos</h3>
+            <p>Me contás de tu negocio por WhatsApp y te paso un presupuesto cerrado.</p>
+          </li>
+          <li>
+            <span class="linea-tiempo__dia">Día 2</span>
+            <h3>Me pasás tu información</h3>
+            <p>Fotos, servicios, precios y horarios. Con la seña del 50% arranco.</p>
+          </li>
+          <li>
+            <span class="linea-tiempo__dia">Días 3 a 5</span>
+            <h3>La armo y la revisás</h3>
+            <p>Te mando un link para que la veas en tu celular y pidas los cambios que quieras.</p>
+          </li>
+          <li>
+            <span class="linea-tiempo__dia">Día 6</span>
+            <h3>Queda online</h3>
+            <p>La publico, pagás el resto y te muestro cómo compartirla con tus clientes.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ SOBRE MÍ ============ -->
+    <section class="bloque bloque--niebla" id="sobre-mi">
+      <div class="contenedor sobre">
+        <img src="assets/franco.jpg" alt="Franco Buyatti" class="sobre__foto" width="120" height="120" loading="lazy">
+        <div class="sobre__texto">
+          <h2>Sobre mí</h2>
+          <p>Soy Franco. Trabajo en IT desde 2024, en mesa de ayuda del sector salud, y estudio Informática Aplicada en la UTN. Mi trabajo de todos los días es resolverle problemas de tecnología a personas que no tienen por qué saber de tecnología. Con tu web es igual: vos me contás tu negocio y yo me encargo del resto.</p>
+          <a href="#" class="enlace js-linkedin" target="_blank" rel="noopener">Ver mi perfil en LinkedIn</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PREGUNTAS ============ -->
+    <section class="bloque" id="preguntas">
+      <div class="contenedor preguntas">
+        <h2>Preguntas frecuentes</h2>
+        <div>
+          <details>
+            <summary>¿Tengo que pagar hosting o algo todos los meses?</summary>
+            <p>No es obligatorio. Puedo publicarla en un servidor gratuito. Si querés una dirección propia, como tunegocio.com.ar, el dominio se paga una vez por año y queda a tu nombre.</p>
+          </details>
+          <details>
+            <summary>¿Puedo pedir cambios?</summary>
+            <p>Sí. Los cambios mientras la armamos están incluidos. Después, podés pedir cambios sueltos o sumar el mantenimiento mensual.</p>
+          </details>
+          <details>
+            <summary>¿Cómo se paga?</summary>
+            <p>Por transferencia o Mercado Pago, en pesos al cambio del día. La mitad para empezar y la otra mitad cuando la web está publicada.</p>
+          </details>
+          <details>
+            <summary>No tengo fotos ni logo, ¿igual se puede?</summary>
+            <p>Sí. Te digo qué fotos sacar con el celular para que queden bien, y si no tenés logo uso el nombre del negocio con una tipografía acorde.</p>
+          </details>
+          <details>
+            <summary>¿Es seguro el soporte remoto?</summary>
+            <p>Sí. Abrís vos el programa de acceso remoto, ves en tu pantalla todo lo que hago y podés cortar la conexión cuando quieras.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CIERRE ============ -->
+    <section class="cierre">
+      <div class="contenedor cierre__fila">
+        <h2>Contame de tu negocio y te paso un presupuesto.</h2>
+        <a href="#" class="boton boton--wa js-whatsapp" data-mensaje="Hola Franco! Quiero una web para mi negocio.">
+          <svg class="icono" aria-hidden="true"><use href="#i-wa"></use></svg>
+          Escribir por WhatsApp
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor pie__fila">
+      <p>Franco Buyatti, Buenos Aires</p>
+      <p>
+        <a href="#" class="js-whatsapp" data-mensaje="Hola Franco!">WhatsApp</a>
+        <a href="#" class="js-linkedin" target="_blank" rel="noopener">LinkedIn</a>
+      </p>
+    </div>
+  </footer>
+
+  <a href="#" class="wa-flotante js-whatsapp" data-mensaje="Hola Franco! Vi tu página y quiero hacerte una consulta." aria-label="Escribir por WhatsApp">
+    <svg aria-hidden="true"><use href="#i-wa"></use></svg>
+  </a>
+
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12.04 2a9.9 9.9 0 0 0-8.5 15l-1.4 5 5.15-1.35A9.9 9.9 0 1 0 12.04 2Zm0 18.1c-1.5 0-2.97-.4-4.25-1.16l-.3-.18-3.06.8.82-2.98-.2-.31a8.2 8.2 0 1 1 6.99 3.83Zm4.5-6.14c-.25-.12-1.46-.72-1.69-.8-.23-.08-.39-.12-.56.12-.16.25-.64.8-.78.97-.15.16-.29.18-.54.06a6.7 6.7 0 0 1-3.32-2.9c-.25-.43.25-.4.71-1.33.08-.16.04-.3-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.41-.56-.42h-.47a.9.9 0 0 0-.66.31 2.77 2.77 0 0 0-.86 2.06c0 1.21.88 2.39 1 2.55.13.17 1.74 2.65 4.21 3.72 1.56.67 2.18.73 2.96.61.48-.07 1.46-.6 1.67-1.17.2-.58.2-1.07.15-1.17-.06-.1-.22-.17-.47-.29Z"/></symbol>
+  </svg>
+
+  <script src="script.js"></script>
+</body>
+</html>
