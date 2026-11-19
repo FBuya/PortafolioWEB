@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Barbería Faro Norte · Villa Crespo, CABA</title>
+  <meta name="description" content="Cortes, barba y perfilado en Villa Crespo. Reservá tu turno por WhatsApp en un minuto.">
+
+  <!-- Vista previa al compartir el link por WhatsApp / redes -->
+  <meta property="og:title" content="Barbería Faro Norte · Villa Crespo">
+  <meta property="og:description" content="Cortes, barba y perfilado. Reservá por WhatsApp.">
+  <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ============ ENCABEZADO ============ -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#inicio" class="logo">Faro<span>Norte</span></a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" id="nav">
+        <a href="#servicios">Servicios</a>
+        <a href="#como-reservar">Cómo reservar</a>
+        <a href="#galeria">Galería</a>
+        <a href="#horarios">Horarios</a>
+        <a href="#preguntas">Preguntas</a>
+        <a href="#" class="btn btn--small js-whatsapp" data-mensaje="Hola! Quiero reservar un turno.">Reservar</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="inicio">
+      <div class="container hero__inner">
+        <p class="estado" id="estado" aria-live="polite">Calculando horario…</p>
+        <h1>Tu corte, <em>sin vueltas</em>.</h1>
+        <p class="hero__sub">Barbería clásica en Villa Crespo. Cortes, barba y perfilado con turno, sin esperas.</p>
+        <div class="hero__ctas">
+          <a href="#" class="btn js-whatsapp" data-mensaje="Hola! Quiero reservar un turno.">
+            <svg class="icon" aria-hidden="true"><use href="#i-whatsapp"></use></svg>
+            Reservar por WhatsApp
+          </a>
+          <a href="#servicios" class="btn btn--ghost">Ver precios</a>
+        </div>
+        <ul class="hero__datos">
+          <li><strong>+8</strong> años en el barrio</li>
+          <li><strong>30'</strong> promedio por turno</li>
+          <li><strong>Todos</strong> los medios de pago</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ SERVICIOS ============ -->
+    <section class="section" id="servicios">
+      <div class="container">
+        <h2 class="section__title">Servicios y precios</h2>
+        <p class="section__lead">Tocá “Reservar” y te abre WhatsApp con el servicio ya escrito.</p>
+
+        <div class="servicios">
+          <article class="servicio">
+            <div>
+              <h3>Corte</h3>
+              <p>Tijera o máquina, lavado y peinado.</p>
+            </div>
+            <div class="servicio__lado">
+              <span class="precio">$16.000</span>
+              <a href="#" class="link-reservar js-whatsapp" data-servicio="Corte">Reservar →</a>
+            </div>
+          </article>
+
+          <article class="servicio servicio--destacado">
+            <span class="badge">El más pedido</span>
+            <div>
+              <h3>Corte + barba</h3>
+              <p>Corte completo, perfilado de barba con toalla caliente.</p>
+            </div>
+            <div class="servicio__lado">
+              <span class="precio">$22.000</span>
+              <a href="#" class="link-reservar js-whatsapp" data-servicio="Corte + barba">Reservar →</a>
+            </div>
+          </article>
+
+          <article class="servicio">
+            <div>
+              <h3>Barba</h3>
+              <p>Rebaje, perfilado a navaja y aceite.</p>
+            </div>
+            <div class="servicio__lado">
+              <span class="precio">$9.000</span>
+              <a href="#" class="link-reservar js-whatsapp" data-servicio="Barba">Reservar →</a>
+            </div>
+          </article>
+
+          <article class="servicio">
+            <div>
+              <h3>Corte niño</h3>
+              <p>Hasta 12 años.</p>
+            </div>
+            <div class="servicio__lado">
+              <span class="precio">$12.000</span>
+              <a href="#" class="link-reservar js-whatsapp" data-servicio="Corte niño">Reservar →</a>
+            </div>
+          </article>
+
+          <article class="servicio">
+            <div>
+              <h3>Color / decoloración</h3>
+              <p>Consultá antes por WhatsApp según largo.</p>
+            </div>
+            <div class="servicio__lado">
+              <span class="precio">desde $25.000</span>
+              <a href="#" class="link-reservar js-whatsapp" data-servicio="Color / decoloración">Consultar →</a>
+            </div>
+          </article>
+
+          <article class="servicio">
+            <div>
+              <h3>Diseño / perfilado</h3>
+              <p>Líneas, cejas o retoque de contorno.</p>
+            </div>
+            <div class="servicio__lado">
+              <span class="precio">$5.000</span>
+              <a href="#" class="link-reservar js-whatsapp" data-servicio="Diseño / perfilado">Reservar →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CÓMO RESERVAR ============ -->
+    <section class="section section--alt" id="como-reservar">
+      <div class="container">
+        <h2 class="section__title">Reservar es así de fácil</h2>
+        <ol class="pasos">
+          <li>
+            <span class="paso__num">1</span>
+            <h3>Elegí el servicio</h3>
+            <p>Tocá “Reservar” en el servicio que quieras.</p>
+          </li>
+          <li>
+            <span class="paso__num">2</span>
+            <h3>Mandá el WhatsApp</h3>
+            <p>El mensaje ya va escrito. Decinos día y hora.</p>
+          </li>
+          <li>
+            <span class="paso__num">3</span>
+            <h3>Listo, te confirmamos</h3>
+            <p>Te respondemos en el día con tu turno.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ GALERÍA ============ -->
+    <!-- En un cliente real: reemplazar cada <div class="foto"> por <img src="fotos/1.webp" alt="..."> -->
+    <section class="section" id="galeria">
+      <div class="container">
+        <h2 class="section__title">Trabajos</h2>
+        <p class="section__lead">Algunos cortes recientes. Más en nuestro Instagram.</p>
+        <div class="galeria">
+          <div class="foto foto--1"><span>Fade clásico</span></div>
+          <div class="foto foto--2"><span>Barba completa</span></div>
+          <div class="foto foto--3"><span>Texturizado</span></div>
+          <div class="foto foto--4"><span>Corte niño</span></div>
+          <div class="foto foto--5"><span>Perfilado</span></div>
+          <div class="foto foto--6"><span>El local</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ HORARIOS Y UBICACIÓN ============ -->
+    <section class="section section--alt" id="horarios">
+      <div class="container ubicacion">
+        <div>
+          <h2 class="section__title">Horarios</h2>
+          <!-- La tabla la arma script.js a partir del objeto HORARIOS -->
+          <table class="horarios" id="tablaHorarios" aria-label="Horarios de atención"></table>
+
+          <h3 class="direccion__titulo">Dónde estamos</h3>
+          <p class="direccion">Villa Crespo, CABA<br><small>(Dirección de ejemplo: negocio ficticio)</small></p>
+          <a href="https://www.google.com/maps/search/?api=1&query=Villa+Crespo+Buenos+Aires" target="_blank" rel="noopener" class="btn btn--ghost btn--small">Cómo llegar</a>
+        </div>
+        <div class="mapa">
+          <iframe
+            title="Mapa de ubicación"
+            src="https://www.google.com/maps?q=Villa+Crespo,+Buenos+Aires&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PREGUNTAS FRECUENTES ============ -->
+    <section class="section" id="preguntas">
+      <div class="container container--angosto">
+        <h2 class="section__title">Preguntas frecuentes</h2>
+        <details>
+          <summary>¿Atienden sin turno?</summary>
+          <p>Sí, si hay un hueco libre. Pero con turno no esperás nada, así que te recomendamos reservar.</p>
+        </details>
+        <details>
+          <summary>¿Qué medios de pago aceptan?</summary>
+          <p>Efectivo, débito, crédito y transferencia.</p>
+        </details>
+        <details>
+          <summary>¿Y si llego tarde o no puedo ir?</summary>
+          <p>Avisanos por WhatsApp lo antes posible. Con más de 15 minutos de demora puede que tengamos que reprogramar.</p>
+        </details>
+        <details>
+          <summary>¿Cortan a chicos?</summary>
+          <p>Sí, a partir de los 3 años. Los sábados a la mañana son ideales porque hay menos movimiento.</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- ============ CIERRE ============ -->
+    <section class="cta-final">
+      <div class="container">
+        <h2>¿Te toca corte?</h2>
+        <a href="#" class="btn js-whatsapp" data-mensaje="Hola! Quiero reservar un turno.">
+          <svg class="icon" aria-hidden="true"><use href="#i-whatsapp"></use></svg>
+          Reservar ahora
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ PIE ============ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>
+        <a href="#inicio" class="logo">Faro<span>Norte</span></a>
+        <p class="footer__nota">Sitio de demostración: <strong>negocio ficticio</strong>, datos de ejemplo.</p>
+      </div>
+      <div class="footer__links">
+        <a href="#" class="js-whatsapp" data-mensaje="Hola!">WhatsApp</a>
+        <a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a>
+      </div>
+      <p class="footer__credito">Diseño y desarrollo: <a href="https://github.com/FBuya" target="_blank" rel="noopener">Franco</a></p>
+    </div>
+  </footer>
+
+  <!-- Botón flotante de WhatsApp -->
+  <a href="#" class="wa-flotante js-whatsapp" data-mensaje="Hola! Quiero reservar un turno." aria-label="Escribir por WhatsApp">
+    <svg aria-hidden="true"><use href="#i-whatsapp"></use></svg>
+  </a>
+
+  <!-- Íconos SVG (se reutilizan con <use href="#...">) -->
+  <svg width="0" height="0" style="position:absolute">
+    <symbol id="i-whatsapp" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M12.04 2a9.9 9.9 0 0 0-8.5 15l-1.4 5 5.15-1.35A9.9 9.9 0 1 0 12.04 2Zm0 18.1c-1.5 0-2.97-.4-4.25-1.16l-.3-.18-3.06.8.82-2.98-.2-.31a8.2 8.2 0 1 1 6.99 3.83Zm4.5-6.14c-.25-.12-1.46-.72-1.69-.8-.23-.08-.39-.12-.56.12-.16.25-.64.8-.78.97-.15.16-.29.18-.54.06a6.7 6.7 0 0 1-3.32-2.9c-.25-.43.25-.4.71-1.33.08-.16.04-.3-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.41-.56-.42h-.47a.9.9 0 0 0-.66.31 2.77 2.77 0 0 0-.86 2.06c0 1.21.88 2.39 1 2.55.13.17 1.74 2.65 4.21 3.72 1.56.67 2.18.73 2.96.61.48-.07 1.46-.6 1.67-1.17.2-.58.2-1.07.15-1.17-.06-.1-.22-.17-.47-.29Z"/>
+    </symbol>
+  </svg>
+
+  <script src="script.js"></script>
+</body>
+</html>
