@@ -4,7 +4,7 @@
 
 // ⚠️ COMPLETÁ ESTOS DOS DATOS
 // WhatsApp: código de país + 9 + área + número, sin "+", espacios ni guiones. Ej: "5491123456789"
-const WHATSAPP = "1153332369";
+const WHATSAPP = "5491153332369";
 // LinkedIn: la dirección completa de tu perfil
 const LINKEDIN = "https://www.linkedin.com/in/francobuyatti";
 
