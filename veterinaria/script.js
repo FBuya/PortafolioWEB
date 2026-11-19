@@ -79,6 +79,15 @@ form.addEventListener("submit", (e) => {
   ];
   if (comentario) lineas.push(`💬 ${comentario}`);
 
+  // En la demo se muestra el cartel explicativo; en una web real, abre WhatsApp
+  if (window.mostrarDemo) {
+    window.mostrarDemo({
+      tituloTexto: "Así le llega el turno a la veterinaria",
+      explicacion: "En tu web, el formulario abre WhatsApp con tu número y todos los datos ordenados:",
+      mensaje: lineas.join("\n"),
+    });
+    return;
+  }
   window.open(linkWhatsApp(lineas.join("\n")), "_blank", "noopener");
 });
 
